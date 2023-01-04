@@ -1,0 +1,22 @@
+<h3 class="m-2 ">Cart</h3>
+<div class="row row-cols-1 row-cols-md-4 g-4 m-2" >
+    <div class="col-sm-6" *ngFor="let item of items">
+        <div class="card h-100 ">
+            <img [src]="item.imgurl" class="card-img-top" height="200" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">{{item.price|currency}}</p>
+                <input type="number" class="form-control" placeholder="Quantity  (kg)" #Quantity>
+                <button  type="button" class="btn btn-secondary m-1" (click)="buy(item.price, Quantity.value)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+    <h3 class="m-2">Order Total Price = {{TotalPrice | currency }}</h3>
+    <button  type="button" class="btn btn-primary m-2" (click)="checkout()">Check Out</button>
+    
+
+    
+    

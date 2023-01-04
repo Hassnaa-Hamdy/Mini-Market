@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Mini Market</a>
+    <button (click)="toggleNavbar()"   class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" [class.show]="isopen" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Cart" routerLinkActive="active">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Admin" routerLinkActive="active">Dashbord</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/LogIn" routerLinkActive="active">LogIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/SignUp" routerLinkActive="active">SignUp</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-danger">LogOut</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

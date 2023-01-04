@@ -1,0 +1,32 @@
+{
+  "signUp": [
+    {
+      "name": "suren",
+      "mobile": "6858765876",
+      "email": "khgk@kjhlhljk",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "hassnaa",
+      "mobile": "01062401426",
+      "email": "hsnaa.hmdy0o0o@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": null,
+      "mobile": null,
+      "email": "suren",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": null,
+      "mobile": null,
+      "email": "suren",
+      "password": "1234",
+      "id": 4
+    }
+  ]
+}
